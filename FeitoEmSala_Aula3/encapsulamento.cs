@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace FeitoEmSala_Aula3_2TDSPF
 {
-    internal class Animal
+    internal class Carro
     {
+        private String modelo; // Carinha encapsulado
 
-        public void EmitirSom()
+        public void DefinirModelo(String novoModelo)
         {
-            Console.WriteLine("Um som qualquer de animal!");
-        }       
-    }
-
-    internal class Gato : Animal
-    {
-        public void Miar()
-        {
-            
-            Console.WriteLine("MIAUUU");
+            modelo = novoModelo;
         }
+
+        public String RetornarModelo()
+        {
+            return modelo;
+        }
+
+
     }
 }
